@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;&lt;/b&gt; (não semântica).</p>
+
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;&lt;/strong&gt; (semântica).</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não semântica).</p>
+
+    <p>Nesta frase, há um <em>termo em ênfase</em> usando a tag em (semântico).</p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos, também, criar um <mark style="background-color: cornflowerblue;">texto marcado</mark> usando a tag mark. <br>
+    A cor padrão da tag mark é amarelo, mas caso queira mudar apenas usar parâmetro |<code><mark>style="background-color: nome_da_cor ou código;"</mark></code>|.</p>
+
+    <p>Outro texto marcado: <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark></p>
+    <p>Mais outro: <mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</mark></p>
+
+    <p>Para mudar a cor global do mark, dentro da tag head adicionar a tag style, assim: <br>
+    <code>&lt;style&gt; {
+        background-color: nome_da_cor ou código;
+    }
+        &lt;/style&gt;
+    </code></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+
+    <h2>Texto </h2>
+
+
+</body>
+</html>
