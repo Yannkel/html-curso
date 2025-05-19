@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Vídeos</title>
+    <style>
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* diz ao navegador para encaixar quantas imagens derem por linha, desde que cada uma tenha mínimo de 250px */
+            gap: 10px; /* Espaçamento entre os itens */
+            max-width: 600px; /* Largura máxima da grade */
+            margin: 0 auto; /* Centraliza a grade na página */
+            padding: 10px; /* Espaçamento interno da grade */
+        }
+
+        /*Essa classe thumb representa cada... thumb ¯\_(ツ)_/¯ que adicionei, no caso quatro.*/
+        .thumb {
+            transition: transform 0.3s; /* Transição suave para o efeito de hover */
+        }
+
+        .thumb:hover {
+            transform: scale(1.05); /* Aumenta a escala da galeria ao passar o mouse */
+        }
+
+        .thumb img {
+            width: 100%; /* Faz a imagem ocupar 100% da largura do item da grid */
+            height: auto; /* Mantém a proporção da imagem */
+            border: 2px solid #c2613a; /* Cor da borda */
+            border-radius: 8px; /* Bordas arredondadas */
+        }
+
+        h1 {
+            text-align: center;
+            color: #3a75c2; /* Cor do texto */
+        }
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+            border-top: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vídeos legais para assistir</h1>
+    
+    <div class="grade">
+        <a href="hardware.html" class="thumb"><img src="imagens/thumb-hardware.jpg" alt="Curso de Hardware"></a>
+        <a href="html.html" class="thumb"><img src="imagens/thumb-html.png" alt="Curso de HTML"></a>
+        <a href="javascript.html" class="thumb"><img src="imagens/thumb-js.png" alt="Curso de JavaScript"></a>
+        <a href="python.html" class="thumb"><img src="imagens/thumb-python.png" alt="Curso de Python"></a>
+    </div>
+    <footer>
+        <p>&#x1F4CDRodapé da página!</p>
+        <p>Desenvolvido por Yannkel</p>
+    </footer>
+</body>
+</html>

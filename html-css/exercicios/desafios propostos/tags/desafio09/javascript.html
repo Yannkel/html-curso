@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <style>
+        img {
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .conteiner {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 100px; /* O margin-top no CSS é usado para criar um espaço acima de um elemento. No caso, ele adiciona 100 pixels acima do rodapé. Se quiser especificar usar: margin-top, margin-right, margin-bottom, margin-left; ou simplesmente, "margin: 25px 30px 40px 15px;" para cada lado respectivamente. O margin aceita valores em pixels(px), pontos(pt), centimentros(cm), ou porcentagem(%). Se não entendeu dê um ctrl+X e veja o que acontece.*/
+            padding: 20px; /* O padding no CSS é usado para criar um espaço envolta do conteúdo de um elemento. No caso, ele adiciona 20 pixels em volta do conteúdo. Se quiser especificar usar: pedding-top, pedding-right, pedding-bottom, pedding-left;ou simplesmente, "pedding: 25px 30px 40px 15px;" para cada lado respectivamente. O pedding aceita valores em pixels(px), pontos(pt), centimentros(cm), ou porcentagem(%). Se não entendeu dê um ctrl+X e veja o que acontece.*/
+            background-color: #f1f1f1;
+            border-top: 2px solid #ccc; /* A borda superior do rodapé é de 2 pixels de espessura e tem uma cor cinza clara (#ccc). */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso de JavaScript</h1>
+    <p>Clique na imagem abaixo e acesse o curso de JavaScript!</p>
+
+    <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank" rel="noopener noreferrer external"><img src="imagens/thumb-js.png" alt="Curso de JavaScript"></a>
+    <p>Esse curso é muito bom, recomendo!</p>
+
+    <!--Botão de Voltar-->
+    <div class="conteiner">
+        <a href="index.html" title="Voltar à página principal" rel="prev"><img src="imagens/voltar.png" style="filter: invert();"></a>
+    </div>
+    
+<!-- a tag footer siguinifica rodapé, é uma tag semântica. Dá para usar o div porém não é recomendado.-->
+    <footer>
+        <p>&#x1F4CDRodapé da página!</p>
+        <p>Desenvolvido por Yannkel</p>
+    </footer>
+</body>
+</html>
